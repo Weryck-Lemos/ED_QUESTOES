@@ -1,0 +1,67 @@
+2025-08-14 02:13:27, MOVE, v:1, k:pintando, mode:DOWN
+2025-08-14 02:13:29, MOVE, v:1, k:mumia, mode:DOWN
+2025-08-14 02:13:31, MOVE, v:1, k:fuga, mode:DOWN
+2025-08-14 15:52:58, MOVE, v:1, k:fuga, mode:PICK
+2025-08-14 15:53:02, EXEC, v:1, k:fuga, mode:FULL, rate:0, size:19
+2025-08-14 15:53:57, EXEC, v:1, k:fuga, mode:FULL, rate:0, size:21
+2025-08-14 15:54:59, EXEC, v:1, k:fuga, mode:FULL, rate:0, size:27
+2025-08-14 16:02:44, MOVE, v:1, k:fuga, mode:PICK
+2025-08-14 16:02:47, EXEC, v:1, k:fuga, mode:FULL, rate:20, size:23
+2025-08-14 16:03:03, EXEC, v:1, k:fuga, mode:FULL, rate:20
+2025-08-14 16:07:59, EXEC, v:1, k:fuga, mode:FULL, rate:40, size:19
+2025-08-14 16:08:52, EXEC, v:1, k:fuga, mode:FULL, rate:40
+2025-08-14 16:09:18, EXEC, v:1, k:fuga, mode:FULL, rate:40
+2025-08-14 16:09:32, EXEC, v:1, k:fuga, mode:FULL, rate:40
+2025-08-14 16:11:25, EXEC, v:1, k:fuga, mode:FULL, rate:0, size:19
+2025-08-14 16:11:50, EXEC, v:1, k:fuga, mode:FULL, rate:60, size:19
+2025-08-14 16:13:55, EXEC, v:1, k:fuga, mode:FULL, rate:100, size:19
+2025-08-14 16:15:15, MOVE, v:1, k:fuga, mode:BACK
+2025-08-14 16:15:24, SELF, v:1, k:fuga, rate:100, flow:6, edge:5
+2025-08-14 16:21:43, MOVE, v:1, k:mumia, mode:PICK
+2025-08-14 16:21:44, EXEC, v:1, k:mumia, mode:FULL, rate:100, size:20
+2025-08-14 16:21:46, MOVE, v:1, k:mumia, mode:BACK
+2025-08-14 16:21:54, SELF, v:1, k:mumia, rate:100, flow:6, edge:5
+2025-08-14 16:24:01, MOVE, v:1, k:pintando, mode:PICK
+2025-08-14 16:24:02, EXEC, v:1, k:pintando, mode:FULL, rate:0, size:12
+2025-08-14 16:24:09, EXEC, v:1, k:pintando, mode:FULL, rate:0, size:12
+2025-08-14 16:24:42, EXEC, v:1, k:pintando, mode:FULL, rate:0, size:12
+2025-08-14 16:24:57, EXEC, v:1, k:pintando, mode:FULL, rate:0, size:12
+2025-08-14 16:25:08, EXEC, v:1, k:pintando, mode:FULL, rate:0, size:12
+2025-08-14 16:25:19, EXEC, v:1, k:pintando, mode:FULL, size:12, fail:COMP
+2025-08-14 16:25:45, EXEC, v:1, k:pintando, mode:FULL, rate:0, size:12
+2025-08-14 16:26:12, EXEC, v:1, k:pintando, mode:FULL, rate:100, size:13
+2025-08-14 16:26:14, MOVE, v:1, k:pintando, mode:BACK
+2025-08-14 16:26:19, SELF, v:1, k:pintando, rate:100, flow:6, edge:5
+2025-08-14 16:26:22, MOVE, v:1, k:pedra, mode:DOWN
+2025-08-14 22:55:28, MOVE, v:1, k:pedra, mode:PICK
+2025-08-14 22:55:30, MOVE, v:1, k:pedra, mode:BACK
+2025-08-14 23:03:44, MOVE, v:1, k:pedra, mode:PICK
+2025-08-14 23:03:46, EXEC, v:1, k:pedra, mode:FULL, size:21, fail:COMP
+2025-08-14 23:04:09, EXEC, v:1, k:pedra, mode:FULL, size:22, fail:COMP
+2025-08-14 23:04:35, EXEC, v:1, k:pedra, mode:FULL, rate:25, size:22
+2025-08-14 23:05:10, EXEC, v:1, k:pedra, mode:FULL, rate:41, size:22
+2025-08-14 23:12:46, EXEC, v:1, k:pedra, mode:FULL, rate:41
+2025-08-14 23:12:59, EXEC, v:1, k:pedra, mode:FULL, rate:41
+2025-08-14 23:16:31, EXEC, v:1, k:pedra, mode:FULL, rate:25, size:22
+2025-08-14 23:16:56, EXEC, v:1, k:pedra, mode:FULL, rate:25, size:22
+2025-08-14 23:17:21, EXEC, v:1, k:pedra, mode:FULL, rate:66, size:22
+2025-08-14 23:24:07, EXEC, v:1, k:pedra, mode:FULL, rate:25, size:22
+2025-08-14 23:26:19, MOVE, v:1, k:pedra, mode:PICK
+2025-08-14 23:26:20, EXEC, v:1, k:pedra, mode:FULL, rate:25, size:22
+2025-08-14 23:26:36, EXEC, v:1, k:pedra, mode:FULL, rate:41, size:22
+2025-08-14 23:26:47, EXEC, v:1, k:pedra, mode:FULL, rate:25, size:22
+2025-08-14 23:26:52, EXEC, v:1, k:pedra, mode:FULL, rate:66, size:22
+2025-08-14 23:31:28, EXEC, v:1, k:pedra, mode:FULL, rate:100, size:24
+2025-08-14 23:31:29, MOVE, v:1, k:pedra, mode:BACK
+2025-08-14 23:31:35, SELF, v:1, k:pedra, rate:100, flow:6, edge:5
+2025-08-14 23:31:38, MOVE, v:1, k:casais, mode:DOWN
+2025-08-14 23:43:22, MOVE, v:1, k:casais, mode:PICK
+2025-08-14 23:43:23, EXEC, v:1, k:casais, mode:FULL, rate:100, size:24
+2025-08-14 23:47:07, MOVE, v:1, k:casais, mode:BACK
+2025-08-14 23:47:11, SELF, v:1, k:casais, rate:100, flow:6, edge:5
+2025-08-14 23:47:14, MOVE, v:1, k:baruel, mode:DOWN
+2025-08-14 23:47:16, MOVE, v:1, k:gomos, mode:DOWN
+2025-08-14 23:55:43, MOVE, v:1, k:baruel, mode:PICK
+2025-08-14 23:55:44, EXEC, v:1, k:baruel, mode:FULL, rate:0, size:31
+2025-08-14 23:56:12, EXEC, v:1, k:baruel, mode:FULL, rate:0, size:33
+2025-08-14 23:57:36, EXEC, v:1, k:baruel, mode:FULL, rate:0, size:34

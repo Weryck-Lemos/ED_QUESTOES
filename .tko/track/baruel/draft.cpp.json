@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-14_23-55-44",
+            "content": "@@ -329,29 +329,8 @@\n    %7D\n-%0A    %0A    cout%3C%3C%22%5Cn%22;\n %0A%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-08-14_23-56-12",
+            "content": "@@ -186,22 +186,8 @@\n %3E%3Ex;\n-%0A        x-=1;\n %0A%0A  \n@@ -322,24 +322,28 @@\n %3C%22 %22;%0A    %7D%0A\n+    \n %0A    cout%3C%3C%22\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-14_23-57-36",
+            "content": "@@ -120,10 +120,8 @@\n et(n\n-+1\n ), a\n@@ -182,16 +182,30 @@\n  cin%3E%3Ex;\n+%0A        x-=1;\n %0A%0A      \n@@ -217,16 +217,15 @@\n vet%5B\n-i\n+x\n %5D != 0\n- \n )%7B%0A \n@@ -249,17 +249,17 @@\n sh_back(\n-i\n+x\n );%0A     \n@@ -275,17 +275,17 @@\n     vet%5B\n-i\n+x\n %5D+=1;%0A  \n@@ -301,34 +301,20 @@\n for(\n+ \n int \n-i=0; i%3Cans.size(); i++\n+x : ans\n )%7B%0A \n@@ -324,21 +324,17 @@\n     \n-if(i%3E1)\n cout%3C%3C\n+x%3C%3C\n %22 %22;\n@@ -334,24 +334,27 @@\n x%3C%3C%22 %22;%0A    \n+%7D%0A%0A\n     cout%3C%3Can\n@@ -355,38 +355,110 @@\n ut%3C%3C\n-ans%5Bi%5D;%0A    %7D%0A%0A    cout%3C%3C%22%5Cn%22;\n+%22%5Cn%22;%0A%0A    for(int i=0; i%3Cn; i++)%7B%0A        if(vet%5Bi%5D!=0)%7B%0A            cout%3C%3Ci+1%3C%3C%22 %22;%0A        %7D%0A    %7D%0A\n %0A%7D%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_00-01-29",
+            "content": "@@ -290,13 +290,10 @@\n for(\n-size_\n+in\n t i=\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-15_00-01-42",
+            "content": "@@ -81,22 +81,8 @@\n  n,m\n-, szA=0, szB=0\n ;%0A  \n@@ -286,85 +286,44 @@\n     \n-if(!ans.size())cout%3C%3C%22N%5Cn%22;%0A    else %7B%0A            for(int i=0; i%3CszA\n+for(size_t i=0; i%3Cans.size()\n ; i++)%7B%0A\n     \n@@ -314,28 +314,24 @@\n ze(); i++)%7B%0A\n-    \n         if(i\n@@ -344,20 +344,16 @@\n t%3C%3C%22 %22;%0A\n-    \n         \n@@ -366,26 +366,16 @@\n ans%5Bi%5D;%0A\n-        %7D%0A\n     %7D%0A%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-15_00-03-49",
+            "content": "@@ -77,16 +77,30 @@\n  int n,m\n+, szA=0, szB=0\n ;%0A    ci\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-03-57",
+            "content": "@@ -348,26 +348,19 @@\n  i=0; i%3C\n-ans.size()\n+szA\n ; i++)%7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-04-05",
+            "content": "@@ -341,13 +341,10 @@\n for(\n-size_\n+in\n t i=\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-25-26",
+            "content": "@@ -81,22 +81,8 @@\n  n,m\n-, szA=0, szB=0\n ;%0A  \n@@ -246,27 +246,8 @@\n i);%0A\n-            szA++;%0A\n     \n@@ -248,24 +248,24 @@\n ;%0A        %7D%0A\n+\n         vet%5B\n@@ -286,19 +286,26 @@\n     if(!\n-szA\n+ans.size()\n )cout%3C%3C%22\n@@ -318,16 +318,17 @@\n     else\n+ \n %7B%0A      \n@@ -325,30 +325,37 @@\n e %7B%0A        \n+  \n+  \n for(\n-in\n+size_\n t i=0; i%3CszA\n@@ -355,19 +355,60 @@\n ; i%3C\n-szA; i++)%7B%0A\n+ans.size(); i++)%7B%0A            if(i%3E1)cout%3C%3C%22 %22;%0A    \n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-27-10",
+            "content": "@@ -84,16 +84,23 @@\n m, szA=0\n+, szB=0\n ;%0A    ci\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-27-18",
+            "content": "@@ -77,16 +77,23 @@\n  int n,m\n+, szA=0\n ;%0A    ci\n@@ -249,16 +249,35 @@\n ack(i);%0A\n+            szA++;%0A\n         \n@@ -274,24 +274,24 @@\n ;%0A        %7D%0A\n-\n         vet%5B\n@@ -312,26 +312,19 @@\n     if(!\n-ans.size()\n+szA\n )cout%3C%3C%22\n@@ -337,17 +337,16 @@\n     else\n- \n %7B%0A      \n@@ -355,13 +355,10 @@\n for(\n-size_\n+in\n t i=\n@@ -366,18 +366,11 @@\n ; i%3C\n-ans.size()\n+szA\n ; i+\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-28-09",
+            "content": "@@ -201,17 +201,17 @@\n  if(vet%5B\n-x\n+i\n %5D != 0 )\n@@ -264,17 +264,17 @@\n     vet%5B\n-x\n+i\n %5D+=1;%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-15_00-31-51",
+            "content": "@@ -238,17 +238,17 @@\n sh_back(\n-x\n+i\n );%0A     \n@@ -361,28 +361,24 @@\n ze(); i++)%7B%0A\n-    \n         cout\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-15_00-32-29",
+            "content": "@@ -369,38 +369,8 @@\n +)%7B%0A\n-            if(i%3E0)cout%3C%3C%22 %22;%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-15_00-35-23",
+            "content": "@@ -128,14 +128,8 @@\n  ans\n-, ans2\n ;%0A  \n@@ -442,287 +442,8 @@\n  %7D%0A%0A\n-    for(int i =1; i%3C=n; i++)%7B%0A        if(vet%5Bi%5D == 0)%7B%0A            ans2.push_back(i);%0A        %7D%0A    %7D%0A%0A    if(!ans2.size())%7B%0A        cout%3C%3C%22N%5Cn%22;%0A    %7D%0A%0A    else%7B%0A        for(int i=0; i%3Cans2.size(); i++)%7B%0A            if(i%3E0)cout%3C%3C%22 %22;%0A            cout%3C%3Cans2%5Bi%5D;%0A        %7D%0A    %7D%0A%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_00-37-34",
+            "content": "@@ -611,37 +611,34 @@\n se%7B%0A        for(\n-size_\n+in\n t i=0; i%3Cans2.si\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-08-15_00-37-49",
+            "content": "@@ -448,25 +448,8 @@\n  %7D%0A%0A\n-    cout%3C%3C%22%5Cn%22;%0A%0A\n     \n@@ -724,12 +724,29 @@\n  %7D%0A    %7D\n+%0A%0A    cout%3C%3C%22%5Cn%22;\n %0A%7D%0A%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-08-15_00-38-03",
+            "content": "@@ -741,29 +741,12 @@\n  %7D%0A    %7D\n-%0A%0A    cout%3C%3C%22%5Cn%22;\n %0A%7D%0A%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-08-15_00-38-26",
+            "content": "@@ -307,24 +307,26 @@\n e())cout%3C%3C%22N\n+%5Cn\n %22;%0A    else \n@@ -602,16 +602,18 @@\n cout%3C%3C%22N\n+%5Cn\n %22;%0A    %7D\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-08-15_00-38-38",
+            "content": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    int n,m;\n    cin>>n>>m;\n\n    vector<int> vet(n+1), ans, ans2;\n    for(int i=0; i<m; i++){\n        int x;\n        cin>>x;\n\n        if(vet[x] != 0 ){\n            ans.push_back(x);\n        }\n        vet[x]+=1;\n    }\n\n    if(!ans.size())cout<<\"N\";\n    else {\n        for(size_t i=0; i<ans.size(); i++){\n            if(i>0)cout<<\" \";\n            cout<<ans[i];\n        }\n    }\n\n    cout<<\"\\n\";\n\n    for(int i =1; i<=n; i++){\n        if(vet[i] == 0){\n            ans2.push_back(i);\n        }\n    }\n\n    if(!ans2.size()){\n        cout<<\"N\";\n    }\n\n    else{\n        for(size_t i=0; i<ans2.size(); i++){\n            if(i>0)cout<<\" \";\n            cout<<ans2[i];\n        }\n    }\n\n    cout<<\"\\n\";\n}\n\n",
+            "lines": "49"
+        }
+    ]
+}

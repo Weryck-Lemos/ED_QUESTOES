@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-14_16-21-44",
+            "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string nome;\n    cin>>nome;\n\n    int idade;\n    cin>>idade;\n\n    if(idade<12) cout<<nome<<\" eh crianca\\n\";\n    else if(idade < 18) cout<< nome<<\" eh jovem\\n\";\n    else if(idade<65) cout<<nome << \" eh adulto\\n\";\n    else if(idade<100) cout<<nome<<\" eh idoso\\n\";\n    else cout<<nome<<\" eh mumia\\n\";\n    \n    \n}\n\n",
+            "lines": "20"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+remote: https://github.com/qxcodeed/arcade/blob/master/Readme.md
+lang: cpp
+version: 0.0.1
+database: database
+expanded:
+- main-quest
+tasks:
+  pintando: '{rate:100, flow:6, edge:5}'
+  mumia: '{rate:100, flow:6, edge:5}'
+  fuga: '{rate:100, flow:6, edge:5}'
+  pedra: '{rate:100, flow:6, edge:5}'
+  casais: '{rate:100, flow:6, edge:5}'
+  baruel: '{rate:100, flow:6, edge:5}'
+  gomos: '{rate:100, flow:6, edge:5}'
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 0
+  xray: 0
+index: revisão

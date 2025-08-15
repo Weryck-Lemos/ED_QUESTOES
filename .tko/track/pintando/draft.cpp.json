@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-14_16-24-02",
+            "content": "@@ -108,14 +108,11 @@\n     \n-double\n+int\n  p =\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-24-09",
+            "content": "@@ -70,22 +70,19 @@\n ) %7B%0A    \n-double\n+int\n  a,b,c;%0A\n@@ -128,10 +128,8 @@\n c)/2\n-.0\n ;%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-24-42",
+            "content": "@@ -176,10 +176,11 @@\n c), \n--\n 1\n+/2\n )%3C%3C%22\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-24-57",
+            "content": "@@ -174,18 +174,16 @@\n p-c), -1\n-/2\n )%3C%3C%22%5Cn%22;\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-25-08",
+            "content": "@@ -145,12 +145,11 @@\n ut%3C%3C\n-sqrt\n+pow\n (p *\n@@ -171,16 +171,20 @@\n * (p-c),\n+ -1/\n 2)%3C%3C%22%5Cn%22\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-25-19",
+            "content": "@@ -145,11 +145,12 @@\n ut%3C%3C\n-pow\n+sqrt\n (p *\n@@ -176,14 +176,9 @@\n -c),\n- 1/2.0\n+2\n )%3C%3C%22\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-25-45",
+            "content": "@@ -35,27 +35,8 @@\n .h%3E%0A\n-#include %3Ciomanip%3E%0A\n usin\n@@ -145,32 +145,8 @@\n ut%3C%3C\n-fixed%3C%3Csetprecision(2)%3C%3C\n pow(\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-08-14_16-26-12",
+            "content": "#include <iostream>\n#include <math.h>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    double a,b,c;\n    cin>>a>>b>>c;\n\n    double p = (a+b+c)/2.0;\n    cout<<fixed<<setprecision(2)<<pow(p * (p-a) * (p-b) * (p-c), 1/2.0)<<\"\\n\";\n}\n\n",
+            "lines": "13"
+        }
+    ]
+}

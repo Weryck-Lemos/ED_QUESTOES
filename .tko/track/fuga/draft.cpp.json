@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-14_15-53-02",
+            "content": "@@ -227,24 +227,8 @@\n    %7D\n-%0A%0A        i%25=15;\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-08-14_15-53-57",
+            "content": "@@ -238,96 +238,13 @@\n    i\n-f(i==0)%7B%0A            i=14;%0A        %7D%0A%0A        else if(i==14)%7B%0A            i=0;%0A        %7D\n+%25=15;\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-08-14_15-54-59",
+            "content": "@@ -91,37 +91,35 @@\n d;%0A%0A\n+%0A\n     \n+for(\n int i\n- = f;%0A    while(true\n+=f; i%3Ch; i+=d\n )%7B%0A \n@@ -133,12 +133,10 @@\n if(i\n- \n ==\n- \n p)%7B%0A\n@@ -160,35 +160,16 @@\n %3C%22N%5Cn%22;%0A\n-            break;%0A\n         \n@@ -226,51 +226,108 @@\n     \n+%7D%0A%0A\n     \n-break;%0A        %7D%0A%0A        i = (i+d)%2515;\n+    if(i==0)%7B%0A            i=14;%0A        %7D%0A%0A        else if(i==14)%7B%0A            i=0;%0A        %7D\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-14_16-02-47",
+            "content": "@@ -39,104 +39,8 @@\n d;%0A%0A\n-int dist(int f, int h, int d)%7B%0A    if(d==1) return (h-f+16)%2516;%0A    else return (h-f+16)%2516;%0A%7D%0A%0A\n int \n@@ -99,74 +99,71 @@\n int \n-dH = dist(f,h,d);%0A    int dP = dist(f,p,d);%0A%0A    if(dH%3CdP)\n+i = f;%0A    while(true)%7B%0A        if(i == p)%7B%0A           \n  cout%3C%3C%22\n S%5Cn%22\n@@ -162,9 +162,9 @@\n t%3C%3C%22\n-S\n+N\n %5Cn%22;\n@@ -172,20 +172,71 @@\n     \n-else\n+        break;%0A        %7D%0A%0A        if(i==h)%7B%0A           \n  cout%3C%3C%22\n N%5Cn%22\n@@ -231,17 +231,75 @@\n  cout%3C%3C%22\n-N\n+S\n %5Cn%22;%0A\n+            break;%0A        %7D%0A%0A        i = (i+d)%2515;%0A    %7D%0A\n %7D%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-08-14_16-07-59",
+            "content": "@@ -91,12 +91,11 @@\n rn (\n-f-h \n+h-f\n +16)\n@@ -123,14 +123,12 @@\n (h-f\n- \n +16)\n- \n %2516;\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-08-14_16-11-25",
+            "content": "@@ -113,27 +113,27 @@\n lse return (\n-f-h\n+h-f\n  +16) %2516;%0A%7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-08-14_16-11-50",
+            "content": "@@ -91,11 +91,11 @@\n rn (\n-h-f\n+f-h\n  +16\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-08-14_16-13-55",
+            "content": "#include <iostream>\nusing namespace std;\n\nint dist(int f, int h, int d){\n    if(d==1) return (h-f +16)%16;\n    else return (f-h +16) %16;\n}\n\nint main() {\n    int h,p,f,d;\n    cin>>h>>p>>f>>d;\n\n    int dH = dist(f,h,d);\n    int dP = dist(f,p,d);\n\n    if(dH<dP) cout<<\"S\\n\";\n    else cout<<\"N\\n\";\n}\n\n",
+            "lines": "19"
+        }
+    ]
+}

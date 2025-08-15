@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-14_23-03-46",
+            "content": "@@ -193,51 +193,22 @@\n     \n-int value =abs(a-b);%0A            mai %3Cvalue\n+mai %3C abs(a-b)\n ;%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-08-14_23-04-09",
+            "content": "@@ -194,24 +194,26 @@\n    i\n-f(mai %3C \n+nt value =\n abs(a-b)\n )%7B%0A \n@@ -208,23 +208,42 @@\n abs(a-b)\n-)%7B\n+;\n %0A    \n+        mai %3Cvalue;%0A\n         \n@@ -274,20 +274,16 @@\n         \n-    \n ans = i+\n@@ -289,22 +289,8 @@\n +1;%0A\n-            %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-04-35",
+            "content": "@@ -170,10 +170,10 @@\n =10 \n-&&\n+%7C%7C\n  b%3E=\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-05-10",
+            "content": "@@ -62,16 +62,18 @@\n t n, mai\n+=0\n , ans;%0A \n@@ -302,55 +302,12 @@\n   %7D%0A\n+%0A\n    \n- if(ans==0) cout%3C%3C%22sem ganhador%5Cn%22;%0A    else\n  cou\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-16-31",
+            "content": "@@ -67,18 +67,16 @@\n mai, ans\n-=0\n ;%0A    ci\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-16-56",
+            "content": "@@ -66,16 +66,15 @@\n  mai\n-=-1\n , ans\n+=0\n ;%0A  \n@@ -309,15 +309,14 @@\n  if(\n-mai==-1\n+ans==0\n ) co\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-17-21",
+            "content": "@@ -197,17 +197,17 @@\n  if(mai \n-%3E\n+%3C\n  abs(a-b\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-24-07",
+            "content": "@@ -64,25 +64,18 @@\n n, m\n-enor=100\n+ai=-\n 1, ans\n-=-1\n ;%0A  \n@@ -198,14 +198,12 @@\n if(m\n-enor %3C\n+ai %3E\n  abs\n@@ -231,12 +231,10 @@\n    m\n-enor\n+ai\n  = a\n@@ -265,16 +265,18 @@\n  ans = i\n++1\n ;%0A      \n@@ -306,19 +306,19 @@\n %0A    if(\n-ans\n+mai\n ==-1) co\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-26-20",
+            "content": "@@ -64,18 +64,25 @@\n n, m\n-ai=-\n+enor=100\n 1, ans\n+=-1\n ;%0A  \n@@ -201,18 +201,20 @@\n     if(m\n-ai\n+enor\n  %3C abs(a\n@@ -236,18 +236,20 @@\n        m\n-ai\n+enor\n  = abs(a\n@@ -280,10 +280,8 @@\n  = i\n-+1\n ;%0A  \n@@ -304,24 +304,24 @@\n     %7D%0A    %7D%0A\n-\n     if(ans==\n@@ -323,16 +323,17 @@\n ans==-1)\n+ \n cout%3C%3C%22s\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-26-36",
+            "content": "@@ -197,17 +197,17 @@\n  if(mai \n-%3E\n+%3C\n  abs(a-b\n@@ -310,17 +310,16 @@\n  if(\n-mai\n+ans\n ==-1)\n- \n cout\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-26-47",
+            "content": "@@ -197,17 +197,17 @@\n  if(mai \n-%3C\n+%3E\n  abs(a-b\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-26-52",
+            "content": "@@ -17,27 +17,8 @@\n am%3E%0A\n-#include %3Cclimits%3E%0A\n usin\n@@ -64,28 +64,18 @@\n n, m\n-en= INT_MAX \n+ai=-1\n , ans\n-=-1\n ;%0A  \n@@ -150,17 +150,16 @@\n %3Ea%3E%3Eb;%0A%0A\n-%0A\n         \n@@ -198,11 +198,12 @@\n if(m\n-en%3E\n+ai %3C\n  abs\n@@ -231,11 +231,13 @@\n    m\n-en=\n+ai = \n abs(\n@@ -265,16 +265,18 @@\n  ans = i\n++1\n ;%0A      \n@@ -306,19 +306,19 @@\n %0A    if(\n-ans\n+mai\n ==-1) co\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-14_23-31-28",
+            "content": "#include <iostream>\n#include <climits>\nusing namespace std;\n\nint main() {\n    int n, men= INT_MAX , ans=-1;\n    cin>>n;\n\n    for(int i=0; i<n; i++){\n        int a,b;\n        cin>>a>>b;\n\n\n        if(a>=10 && b>=10){\n            if(men> abs(a-b)){\n                men=abs(a-b);\n                ans = i;\n            }\n        }\n    }\n    if(ans==-1) cout<<\"sem ganhador\\n\";\n    else cout<<ans<<\"\\n\";\n}\n\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-15_00-52-00",
+            "content": "@@ -226,16 +226,41 @@\n %0A    %7D%0A%0A\n+    auto%5Bhx, hy%5D = s%5B0%5D;%0A\n     if(d\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-15_00-54-27",
+            "content": "@@ -75,16 +75,21 @@\n    int q\n+, x,y\n ;%0A    ch\n@@ -108,16 +108,23 @@\n in%3E%3Eq%3E%3Ed\n+ %3E%3Ex%3E%3Ey\n ;%0A%0A    v\n@@ -365,33 +365,33 @@\n %0A%0A    for(int i=\n-0\n+1\n ; i%3Cq; i++)%7B%0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-08-15_00-55-26",
+            "content": "@@ -230,23 +230,16 @@\n  == 'L')\n- cout%3C%3C\n  s%5B0%5D.fi\n@@ -244,31 +244,16 @@\n first --\n- %3C%3C s%5B0%5D.second\n ;%0A    el\n@@ -267,23 +267,16 @@\n  == 'R')\n- cout%3C%3C\n  s%5B0%5D.fi\n@@ -281,31 +281,16 @@\n first ++\n- %3C%3C s%5B0%5D.second\n ;%0A    el\n@@ -308,28 +308,8 @@\n 'U')\n- cout%3C%3C s%5B0%5D.first%3C%3C\n  s%5B0\n@@ -333,30 +333,8 @@\n else\n- cout %3C%3C s%5B0%5D.first %3C%3C\n  s%5B0\n@@ -365,9 +365,9 @@\n t i=\n-1\n+0\n ; i%3C\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-08-15_00-57-02",
+            "content": "@@ -252,16 +252,12 @@\n irst\n--1 %3C%3C%22 %22\n+ -- \n %3C%3C s\n@@ -313,15 +313,10 @@\n st +\n-1 %3C%3C%22 %22\n++ \n %3C%3C s\n@@ -368,21 +368,16 @@\n .first%3C%3C\n-%22 %22%3C%3C\n  s%5B0%5D.se\n@@ -384,10 +384,11 @@\n cond\n+ -\n -\n-1\n ;%0A  \n@@ -419,13 +419,8 @@\n t %3C%3C\n-%22 %22%3C%3C\n  s%5B0\n@@ -431,10 +431,11 @@\n cond\n+ +\n +\n-1\n ;%0A%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-08-15_00-57-45",
+            "content": "@@ -543,23 +543,7 @@\n   %7D%0A\n-    cout%3C%3C%22%5Cn%22;%0A\n %7D%0A%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-08-15_00-58-03",
+            "content": "@@ -262,38 +262,32 @@\n  %22%3C%3C s%5B0%5D.second\n-%3C%3C%22%5Cn%22\n ;%0A    else if(d \n@@ -334,22 +334,16 @@\n %5D.second\n-%3C%3C%22%5Cn%22\n ;%0A    el\n@@ -396,22 +396,16 @@\n second-1\n-%3C%3C%22%5Cn%22\n ;%0A    el\n@@ -447,22 +447,16 @@\n second+1\n-%3C%3C%22%5Cn%22\n ;%0A%0A    f\n@@ -533,17 +533,33 @@\n %3C%3C%22%5Cn%22;%0A\n-\n     %7D%0A\n+    cout%3C%3C%22%5Cn%22;%0A\n %7D%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-15_00-58-28",
+            "content": "@@ -492,16 +492,14 @@\n t i=\n-0\n+1\n ; i%3Cq\n--1\n ; i+\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-08-15_00-58-56",
+            "content": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    int q;\n    char d;\n\n    cin>>q>>d;\n\n    vector<pair<int,int>> s(q);\n    for(int i=0; i<q; i++){\n        cin>>s[i].first >> s[i].second;\n\n    }\n\n    if(d == 'L') cout<< s[0].first-1 <<\" \"<< s[0].second<<\"\\n\";\n    else if(d == 'R') cout<< s[0].first +1 <<\" \"<< s[0].second<<\"\\n\";\n    else if(d == 'U') cout<< s[0].first<<\" \"<< s[0].second-1<<\"\\n\";\n    else cout << s[0].first <<\" \"<< s[0].second+1<<\"\\n\";\n\n    for(int i=0; i<q-1; i++){\n        cout << s[i].first<< ' '<< s[i].second <<\"\\n\";\n    }\n}\n\n",
+            "lines": "26"
+        }
+    ]
+}
