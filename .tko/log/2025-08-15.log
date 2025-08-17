@@ -32,3 +32,63 @@
 2025-08-15 00:58:56, EXEC, v:1, k:gomos, mode:FULL, rate:100, size:26
 2025-08-15 00:58:57, MOVE, v:1, k:gomos, mode:BACK
 2025-08-15 00:59:02, SELF, v:1, k:gomos, rate:100, flow:6, edge:5
+2025-08-15 22:29:41, MOVE, v:1, k:princesa, mode:DOWN
+2025-08-15 22:29:50, SELF, v:1, k:analise, rate:100, flow:6, edge:5
+2025-08-15 22:41:06, MOVE, v:1, k:princesa, mode:PICK
+2025-08-15 22:41:07, EXEC, v:1, k:princesa, mode:FULL, size:31, fail:COMP
+2025-08-15 22:41:15, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:31
+2025-08-15 22:42:25, EXEC, v:1, k:princesa, mode:FULL, size:32, fail:COMP
+2025-08-15 22:42:36, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:32
+2025-08-15 22:42:49, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:32
+2025-08-15 22:42:56, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:32
+2025-08-15 22:43:02, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:32
+2025-08-15 22:43:32, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:43:48, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:44:12, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:44:40, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:52:51, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:53:27, EXEC, v:1, k:princesa, mode:FULL, size:34, fail:COMP
+2025-08-15 22:53:36, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 22:54:01, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 22:55:59, EXEC, v:1, k:princesa, mode:FULL, size:33, fail:COMP
+2025-08-15 22:56:10, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:56:37, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:56:53, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:32
+2025-08-15 22:57:23, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:35
+2025-08-15 22:57:44, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 22:58:02, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 22:58:32, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 22:59:22, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 22:59:47, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 23:01:05, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:01:33, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:01:53, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:02:02, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 23:02:15, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 23:04:08, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 23:04:23, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 23:04:30, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:34
+2025-08-15 23:18:30, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:18:50, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:27:01, EXEC, v:1, k:princesa, mode:FULL, size:33, fail:COMP
+2025-08-15 23:27:11, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:27:45, MOVE, v:1, k:princesa, mode:PICK
+2025-08-15 23:27:47, EXEC, v:1, k:princesa, mode:FULL, rate:0
+2025-08-15 23:27:57, MOVE, v:1, k:princesa, mode:PICK
+2025-08-15 23:27:59, EXEC, v:1, k:princesa, mode:FULL, rate:0
+2025-08-15 23:29:46, EXEC, v:1, k:princesa, mode:FULL, size:33, fail:COMP
+2025-08-15 23:29:55, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:30:18, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:30:32, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:30:43, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:34:12, EXEC, v:1, k:princesa, mode:FULL, rate:16, size:30
+2025-08-15 23:35:15, EXEC, v:1, k:princesa, mode:FULL, size:30, fail:COMP
+2025-08-15 23:35:30, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:30
+2025-08-15 23:36:45, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:30
+2025-08-15 23:39:35, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:32
+2025-08-15 23:39:50, EXEC, v:1, k:princesa, mode:FULL, rate:0, size:33
+2025-08-15 23:41:18, EXEC, v:1, k:princesa, mode:FULL, rate:100, size:34
+2025-08-15 23:42:05, EXEC, v:1, k:princesa, mode:FULL, rate:100, size:34
+2025-08-15 23:42:08, MOVE, v:1, k:princesa, mode:BACK
+2025-08-15 23:42:18, SELF, v:1, k:princesa, rate:100, flow:6, edge:5
+2025-08-15 23:42:24, MOVE, v:1, k:apagando, mode:DOWN

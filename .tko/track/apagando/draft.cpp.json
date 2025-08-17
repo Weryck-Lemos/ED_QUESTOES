@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-16_00-11-23",
+            "content": "@@ -448,23 +448,7 @@\n   %7D%0A\n-    cout%3C%3C%22%5Cn%22;%0A\n %7D%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-08-16_00-11-48",
+            "content": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    int n;\n    cin>>n;\n\n    vector<int> vet1(n);\n    for(int i=0; i<n; i++)cin>>vet1[i];\n\n    int m;\n    cin>>m;\n\n    vector<int> vet2(m);\n    for(int i=0; i<m; i++)cin>>vet2[i];\n\n\n    for(int i=0; i<n; i++){\n        bool printar = true;\n        for(int j=0; j<m; j++){\n            if(vet1[i] == vet2[j])printar = false;\n        }\n\n        if (printar)cout<<vet1[i]<<\" \";\n    }\n    cout<<\"\\n\";\n}\n\n",
+            "lines": "29"
+        }
+    ]
+}

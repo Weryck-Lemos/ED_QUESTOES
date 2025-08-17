@@ -1,0 +1,23 @@
+2025-08-16 00:11:22, MOVE, v:1, k:apagando, mode:PICK
+2025-08-16 00:11:23, EXEC, v:1, k:apagando, mode:FULL, rate:0, size:28
+2025-08-16 00:11:48, EXEC, v:1, k:apagando, mode:FULL, rate:100, size:29
+2025-08-16 00:11:50, MOVE, v:1, k:apagando, mode:BACK
+2025-08-16 00:11:55, SELF, v:1, k:apagando, rate:100, flow:6, edge:5
+2025-08-16 00:14:08, MOVE, v:1, k:manipulacao, mode:DOWN
+2025-08-16 00:16:13, MOVE, v:1, k:especiais, mode:DOWN
+2025-08-16 00:17:07, MOVE, v:1, k:triangulo, mode:DOWN
+2025-08-16 21:00:40, MOVE, v:1, k:triangulo, mode:PICK
+2025-08-16 21:00:41, EXEC, v:1, k:triangulo, mode:FULL, size:44, fail:COMP
+2025-08-16 21:00:50, EXEC, v:1, k:triangulo, mode:FULL, size:39, fail:COMP
+2025-08-16 21:01:58, EXEC, v:1, k:triangulo, mode:FULL, size:50, fail:COMP
+2025-08-16 21:02:07, EXEC, v:1, k:triangulo, mode:FULL, size:39, fail:COMP
+2025-08-16 21:02:41, EXEC, v:1, k:triangulo, mode:FULL, fail:COMP
+2025-08-16 21:03:30, EXEC, v:1, k:triangulo, mode:FULL, rate:0, size:44
+2025-08-16 21:03:45, EXEC, v:1, k:triangulo, mode:FULL, rate:0, size:44
+2025-08-16 21:04:13, EXEC, v:1, k:triangulo, mode:FULL, rate:0, size:44
+2025-08-16 21:10:38, EXEC, v:1, k:triangulo, mode:FULL, rate:0, size:44
+2025-08-16 21:10:45, EXEC, v:1, k:triangulo, mode:FULL, rate:0, size:44
+2025-08-16 21:10:53, EXEC, v:1, k:triangulo, mode:FULL, rate:100, size:44
+2025-08-16 21:10:55, MOVE, v:1, k:triangulo, mode:BACK
+2025-08-16 21:10:59, SELF, v:1, k:triangulo, rate:100, flow:6, edge:5
+2025-08-16 21:11:02, MOVE, v:1, k:treinando, mode:DOWN

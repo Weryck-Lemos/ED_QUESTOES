@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-16_21-00-41",
+            "content": "#include <iostream>\n#include <vector>\n#include <sstream>\n\nvoid processa(std::vector<int> vet);\n\nint main(){\n    std::string line;\n    std::getline(std::cin, line);\n    std::stringstream ss(line);\n    std::vector<int> vet;\n    int value {};\n    while(ss >> value) {\n        vet.push_back(value);\n    }\n    processa(vet);\n}\n",
+            "lines": "17"
+        }
+    ]
+}

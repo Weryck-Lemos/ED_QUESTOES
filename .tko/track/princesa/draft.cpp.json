@@ -1,0 +1,254 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-15_22-41-07",
+            "content": "@@ -277,13 +277,10 @@\n for(\n-size_\n+in\n t i=\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-08-15_22-41-15",
+            "content": "@@ -327,53 +327,17 @@\n ut%3C%3C\n-%22 %22%3C%3C\n vet%5Bi%5D\n-;%0A            if(i==ponto)cout\n %3C%3C%22\n-%3E\n  %22;%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-08-15_22-42-24",
+            "content": "@@ -356,13 +356,8 @@\n if(i\n-nt(i)\n ==po\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_22-42-36",
+            "content": "@@ -368,10 +368,8 @@\n onto\n--1\n )cou\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_22-42-49",
+            "content": "@@ -236,16 +236,17 @@\n cout%3C%3C%22%5B\n+ \n %22;%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_22-42-56",
+            "content": "@@ -374,16 +374,17 @@\n cout%3C%3C%22%3E\n+ \n %22;%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_22-43-02",
+            "content": "@@ -262,42 +262,8 @@\n = m;\n-%0A        ponto = ponto%25vet.size();\n %0A%0A  \n@@ -437,16 +437,41 @@\n         \n+ponto = ponto%25vet.size();\n %0A%0A      \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_22-43-32",
+            "content": "@@ -397,16 +397,18 @@\n )==ponto\n+-1\n )cout%3C%3C%22\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-43-48",
+            "content": "@@ -401,10 +401,8 @@\n onto\n--1\n )cou\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-44-12",
+            "content": "@@ -215,17 +215,16 @@\n size() %3E\n-=\n  1)%7B%0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-44-40",
+            "content": "@@ -395,17 +395,17 @@\n t(i)\n--1\n ==ponto\n+-1\n )cou\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-52-51",
+            "content": "@@ -395,17 +395,17 @@\n t(i)\n+-1\n ==ponto\n--1\n )cou\n@@ -427,51 +427,8 @@\n  %7D%0A%0A\n-        if(ponto== vet.size()-1)cout%3C%3C%22%3E%22;%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-53-27",
+            "content": "@@ -442,20 +442,16 @@\n ponto== \n-int(\n vet.size\n@@ -452,17 +452,16 @@\n t.size()\n-)\n -1)cout%3C\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_22-53-36",
+            "content": "@@ -427,49 +427,8 @@\n  %7D%0A%0A\n-%0A        vet.erase(vet.begin() + ponto);%0A\n     \n@@ -463,32 +463,73 @@\n ))-1)cout%3C%3C%22%3E%22;%0A\n+        vet.erase(vet.begin() + ponto);%0A%0A\n         %0A%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_22-54-01",
+            "content": "@@ -355,22 +355,8 @@\n     \n-if(ponto == i)\n cout\n@@ -368,21 +368,16 @@\n %3C%3Cvet%5Bi%5D\n-%3C%3C%22%3E%22\n ;%0A      \n@@ -386,43 +386,89 @@\n     \n-else cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D;%0A        %7D%0A%0A\n+if(int(i)==ponto-1)cout%3C%3C%22%3E%22;%0A        %7D%0A%0A%0A        vet.erase(vet.begin() + ponto);\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_22-55-59",
+            "content": "@@ -368,15 +368,9 @@\n == i\n-nt(i)) \n+)\n cout\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-56-10",
+            "content": "@@ -347,24 +347,67 @@\n             \n+if(ponto == int(i)) cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D%3C%3C%22%3E%22;\n %0A           \n@@ -399,32 +399,37 @@\n %3E%22;%0A            \n+else \n cout%3C%3C%22 %22%3C%3Cvet%5Bi\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-56-37",
+            "content": "@@ -331,32 +331,45 @@\n t.size(); i++)%7B%0A\n+            %0A\n             cout\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-56-53",
+            "content": "@@ -355,138 +355,38 @@\n     \n-%0A            if(int(i)==ponto-1)cout%3C%3C%22%3E%22;%0A            else cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D;%0A        %7D%0A%0A%0A        vet.erase(vet.begin() + ponto);\n+cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D;%0A        %7D%0A%0A\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_22-57-23",
+            "content": "@@ -331,32 +331,45 @@\n t.size(); i++)%7B%0A\n+            %0A\n             if(i\n@@ -394,21 +394,8 @@\n t%3C%3C%22\n- %22%3C%3Cvet%5Bi%5D%3C%3C%22\n %3E%22;%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-08-15_22-57-44",
+            "content": "@@ -367,16 +367,18 @@\n )==ponto\n+-1\n )cout%3C%3C%22\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_22-58-02",
+            "content": "@@ -367,18 +367,16 @@\n )==ponto\n--1\n )cout%3C%3C%22\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_22-58-32",
+            "content": "@@ -343,32 +343,92 @@\n +)%7B%0A            \n+if(int(i)==ponto-1)cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D%3C%3C%22%3E%22;%0A            else \n cout%3C%3C%22 %22%3C%3Cvet%5Bi\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_22-59-22",
+            "content": "@@ -355,68 +355,8 @@\n     \n-if(int(i)==ponto-1)cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D%3C%3C%22%3E%22;%0A            else \n cout\n@@ -422,16 +422,63 @@\n ponto);%0A\n+        if(ponto== int(vet.size())-1)cout%3C%3C%22%3E%22;\n %0A       \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_22-59-47",
+            "content": "@@ -343,32 +343,92 @@\n +)%7B%0A            \n+if(int(i)==ponto-1)cout%3C%3C%22 %22%3C%3Cvet%5Bi%5D%3C%3C%22%3E%22;%0A            else \n cout%3C%3C%22 %22%3C%3Cvet%5Bi\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-01-05",
+            "content": "@@ -296,10 +296,8 @@\n ze()\n--1\n ;%0A%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-01-33",
+            "content": "@@ -282,17 +282,16 @@\n = ponto%25\n-(\n vet.size\n@@ -294,17 +294,16 @@\n size()-1\n-)\n ;%0A%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-01-53",
+            "content": "@@ -282,16 +282,17 @@\n = ponto%25\n+(\n vet.size\n@@ -293,16 +293,19 @@\n t.size()\n+-1)\n ;%0A%0A     \n@@ -343,17 +343,16 @@\n ; i++)%7B%0A\n-%0A\n         \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-02-02",
+            "content": "@@ -278,11 +278,16 @@\n nto \n-%25\n = \n+ponto%25\n vet.\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-02-15",
+            "content": "@@ -277,17 +277,26 @@\n onto %25= \n-n\n+vet.size()\n ;%0A%0A     \n@@ -294,34 +294,37 @@\n );%0A%0A        for(\n-in\n+size_\n t i=0; i%3Cn; i++)\n@@ -308,33 +308,42 @@\n r(size_t i=0; i%3C\n-n\n+vet.size()\n ; i++)%7B%0A%0A       \n@@ -422,22 +422,8 @@\n o);%0A\n-        n -=1;\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-04-08",
+            "content": "@@ -282,10 +282,8 @@\n %25= n\n--1\n ;%0A%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-04-23",
+            "content": "@@ -278,17 +278,17 @@\n nto %25= n\n-+\n+-\n 1;%0A%0A    \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-04-30",
+            "content": "@@ -258,35 +258,34 @@\n nto \n++\n = \n-(ponto +m -1) %25vet.size()\n+m;%0A        ponto %25= n+1\n ;%0A%0A \n@@ -299,13 +299,10 @@\n for(\n-size_\n+in\n t i=\n@@ -306,26 +306,17 @@\n  i=0; i%3C\n-vet.size()\n+n\n ; i++)%7B%0A\n@@ -399,16 +399,30 @@\n ponto);%0A\n+        n -=1;\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-18-30",
+            "content": "@@ -265,16 +265,19 @@\n ponto +m\n+ -1\n ) %25vet.s\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-18-50",
+            "content": "@@ -207,20 +207,23 @@\n ile(\n-!\n vet.\n-empty()\n+size() %3E= 1\n )%7B%0A \n@@ -269,10 +269,8 @@\n o +m\n--1\n ) %25v\n@@ -317,32 +317,33 @@\n t.size(); i++)%7B%0A\n+%0A\n             cout\n@@ -361,43 +361,8 @@\n i%5D;%0A\n-            if(i==ponto)cout%3C%3C%22%3E%22;%0A\n     \n@@ -410,24 +410,24 @@\n onto);%0A%0A\n+\n         \n ponto%25= \n@@ -422,27 +422,8 @@\n     \n-ponto%25= vet.size();\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-27-01",
+            "content": "@@ -375,13 +375,8 @@\n if(i\n-nt(i)\n ==po\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-27-11",
+            "content": "@@ -460,18 +460,14 @@\n     \n-if(\n ponto\n- =\n+%25\n = ve\n@@ -478,17 +478,8 @@\n ze()\n-) ponto=0\n ;%0A%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-29-46",
+            "content": "@@ -468,20 +468,16 @@\n onto == \n-int(\n vet.size\n@@ -479,17 +479,16 @@\n .size())\n-)\n  ponto=0\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-29-55",
+            "content": "@@ -262,16 +262,18 @@\n ponto +m\n+-1\n ) %25vet.s\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-30-18",
+            "content": "@@ -378,10 +378,8 @@\n t(i)\n--1\n ==po\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-30-32",
+            "content": "@@ -374,16 +374,18 @@\n f(int(i)\n+-1\n ==ponto)\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-30-43",
+            "content": "@@ -236,16 +236,56 @@\n ut%3C%3C%22%5B%22;\n+%0A        ponto = (ponto +m) %25vet.size();\n %0A%0A      \n@@ -404,24 +404,25 @@\n      %7D%0A%0A\n+%0A\n         \n ponto = \n@@ -417,78 +417,85 @@\n     \n-ponto = (ponto +m) %25vet.size();%0A        vet.erase(vet.begin() +\n+vet.erase(vet.begin() + ponto);%0A%0A        if(ponto == int(vet.size()))\n  ponto\n-)\n+=0\n ;%0A%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-34-12",
+            "content": "@@ -333,21 +333,21 @@\n if(i\n- == (m-1)%25n) \n+nt(i)==ponto)\n cout\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_23-35-15",
+            "content": "@@ -337,23 +337,16 @@\n  == \n-size_t(\n (m-1)%25n)\n ) co\n@@ -341,17 +341,16 @@\n (m-1)%25n)\n-)\n  cout%3C%3C%22\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_23-35-30",
+            "content": "@@ -396,17 +396,17 @@\n (ponto +\n-n\n+m\n ) %25vet.s\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_23-36-45",
+            "content": "@@ -194,15 +194,9 @@\n o = \n-(m-1)%25n\n+0\n ;%0A  \n@@ -333,22 +333,27 @@\n if(i\n-nt(i) == ponto\n+ == size_t((m-1)%25n)\n ) co\n@@ -384,51 +384,13 @@\n     \n-if(vet.size() == 1)break;%0A%0A        size_t j\n+ponto\n  = (\n@@ -396,17 +396,17 @@\n (ponto +\n-1\n+n\n ) %25vet.s\n@@ -448,9 +448,13 @@\n ) + \n-j\n+ponto\n );%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-08-15_23-39-35",
+            "content": "@@ -375,30 +375,8 @@\n    %7D\n-%0A        cout%3C%3C%22 %5D%5Cn%22;\n %0A%0A  \n@@ -492,24 +492,37 @@\n );%0A%0A        \n+cout%3C%3C%22 %5D%5Cn%22;\n %0A        %0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-15_23-39-50",
+            "content": "@@ -531,77 +531,8 @@\n     \n-if(j%3E= vet.size()) ponto=0;%0A        else ponto = static_cast%3Cint%3E(j);\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-15_23-41-18",
+            "content": "@@ -576,17 +576,35 @@\n ponto = \n-j\n+static_cast%3Cint%3E(j)\n ;%0A    %7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-08-15_23-42-05",
+            "content": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    int n,m;\n    cin>>n>>m;\n\n    vector<int> vet(n);\n    for(int i=0; i<n; i++){\n        vet[i]=i+1;\n    }\n\n    int ponto = (m-1)%n;\n    while(!vet.empty()){\n        cout<<\"[\";\n\n        for(size_t i=0; i<vet.size(); i++){\n            cout<<\" \"<<vet[i];\n            if(int(i) == ponto) cout<<\">\";\n        }\n        cout<<\" ]\\n\";\n\n        if(vet.size() == 1)break;\n\n        size_t j = (ponto +1) %vet.size();\n        vet.erase(vet.begin() + j);\n\n        \n        if(j>= vet.size()) ponto=0;\n        else ponto = j;\n    }\n}\n\n",
+            "lines": "34"
+        }
+    ]
+}

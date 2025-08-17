@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-16_21-00-41",
+            "content": "@@ -391,8 +391,28 @@\n %5D%5Cn%22;%0A%7D%0A\n+%0A%0Aint main()%7B%0A    %0A%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-16_21-00-50",
+            "content": "@@ -395,158 +395,4 @@\n ;%0A%7D%0A\n-%0Aint main()%7B%0A    int n;%0A    std::cin%3E%3En;%0A%0A    std::vector%3Cint%3E vet(n);%0A    for(int i=0; i%3Cn; i++)std::cin%3E%3Evet%5Bi%5D;%0A%0A    processa(vet, int(vet.size()));%0A%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-16_21-01-58",
+            "content": "@@ -390,8 +390,163 @@\n %22%5D%5Cn%22;%0A%7D\n+%0A%0Aint main()%7B%0A    int n;%0A    std::cin%3E%3En;%0A%0A    std::vector%3Cint%3E vet(n);%0A    for(int i=0; i%3Cn; i++)std::cin%3E%3Evet%5Bi%5D;%0A%0A    processa(vet, int(vet.size()));%0A%0A%7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-16_21-02-07",
+            "content": "@@ -1,62 +1,4 @@\n-#include %3Ciostream%3E%0A#include %3Cvector%3E%0A#include %3Csstream%3E%0A%0A\n #inc\n@@ -89,39 +89,17 @@\n  vet\n-)%7B%0A    int n = int(vet.size());\n+, int n)%7B\n %0A   \n@@ -269,16 +269,21 @@\n ssa(vet2\n+, n-1\n );%0A%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-08-16_21-03-30",
+            "content": "@@ -185,17 +185,17 @@\n   if(n==\n-0\n+1\n )%7B%0A     \n@@ -208,24 +208,28 @@\n urn;%0A    %7D%0A%0A\n+    \n     std::vec\n@@ -248,16 +248,20 @@\n 2(n-1);%0A\n+    \n     for(\n@@ -290,16 +290,20 @@\n         \n+    \n vet2%5Bi%5D \n@@ -321,16 +321,20 @@\n t%5Bi+1%5D;%0A\n+    \n     %7D%0A%0A \n@@ -353,16 +353,16 @@\n vet2);%0A%0A\n+\n     std:\n@@ -370,17 +370,16 @@\n cout%3C%3C%22%5B\n- \n %22;%0A    f\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-16_21-03-45",
+            "content": "@@ -185,17 +185,17 @@\n   if(n==\n-1\n+0\n )%7B%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-16_21-04-13",
+            "content": "@@ -410,16 +410,17 @@\n out%3C%3Cvet\n+2\n %5Bi%5D%3C%3C%22 %22\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-16_21-10-38",
+            "content": "@@ -378,16 +378,18 @@\n i=0; i%3Cn\n+-1\n ; i++)%7B%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-16_21-10-45",
+            "content": "@@ -185,17 +185,17 @@\n   if(n==\n-0\n+1\n )%7B%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-08-16_21-10-53",
+            "content": "#include <iostream>\n#include <vector>\n#include <sstream>\n\n#include <iostream>\n#include <vector>\n#include <sstream>\n\nvoid processa(std::vector<int> vet){\n    int n = int(vet.size());\n    if(n==0){\n        return;\n    }\n\n    std::vector<int> vet2(n-1);\n    for(int i=0; i<n-1; i++){\n        vet2[i] = vet[i]+vet[i+1];\n    }\n\n    processa(vet2);\n\n    std::cout<<\"[ \";\n    for(int i=0; i<n; i++){\n        std::cout<<vet[i]<<\" \";\n    }\n    std::cout<<\"]\\n\";\n}",
+            "lines": "27"
+        }
+    ]
+}
