@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-16_21-51-40",
+            "content": "@@ -44,43 +44,77 @@\n %7B%0A  \n-if(b =\n+while( b !\n = 0)\n- return a;%0A%0A  mdc(b, a%25b)\n+%7B%0A    int r = a%25b;%0A    a = b;%0A    b = r;%0A  %7D%0A  return a\n ;%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-08-16_21-52-59",
+            "content": "@@ -64,23 +64,16 @@\n n a;%0A%0A  \n-return \n mdc(b, a\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-08-16_21-53-09",
+            "content": "#include <iostream>\n\nint mdc(int a, int b) {\n  if(b == 0) return a;\n\n  return mdc(b, a%b);\n}\n\nint main() {\n  int a, b;\n  std::cin >> a >> b;\n  std::cout << mdc(a, b) << std::endl;\n  return 0;\n}\n",
+            "lines": "14"
+        }
+    ]
+}

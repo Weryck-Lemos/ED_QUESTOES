@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-16_21-42-03",
+            "content": "@@ -615,24 +615,29 @@\n int *p =\n+ end;\n  end-1; \n ;p--)%7B%0A \n@@ -628,17 +628,16 @@\n  end-1; \n-;\n p--)%7B%0A  \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-08-16_21-42-32",
+            "content": "@@ -627,34 +627,14 @@\n -1; \n-p != init; )%7B%0A        --p;\n+;p--)%7B\n %0A   \n@@ -652,17 +652,16 @@\n = end-1)\n- \n oss%3C%3C%22, \n@@ -676,20 +676,50 @@\n    oss%3C%3C\n+ \n *p;%0A\n+        if(p == init) break;%0A\n     %7D%0A  \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-08-16_21-46-55",
+            "content": "@@ -619,16 +619,18 @@\n *p = end\n+-1\n ; p != i\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-08-16_21-47-33",
+            "content": "#include <iostream>\n#include <vector>\n#include <sstream>\n#include <climits>\n\n// init: aponta para o primeiro elemento do vetor\n// end: aponta para uma posi\u00e7\u00e3o depois do \u00faltimo elemento do vetor\n// converte o vetor para texto no formato [1, 2, 3, 4]\nstd::string tostr(int * init, int * end) {\n    std::ostringstream oss;\n    oss<<\"[\";\n    for(int *p = init; p != end; p++){\n        if(p != init)oss<<\", \";\n        oss<< *p;\n    }\n    oss <<\"]\";\n    return oss.str();\n}\n\n// converte o vetor para texto, por\u00e9m ao contr\u00e1rio\nstd::string torev(int * init, int * end) {\n    std::ostringstream oss;\n    oss<< \"[\";\n    for(int *p = end; p != init; ){\n        --p;\n        if(p != end-1) oss<<\", \";\n        oss<<*p;\n    }\n    oss <<\"]\";\n    return oss.str();\n}\n// inverte os elementos do vetor inplace\nvoid reverse(int * init, int * end) {\n    if(init == end) return;\n    for(int *l = init, *r = end-1; l<r; l++, --r){\n        std::swap(*l, *r);\n    }\n}\n\nint sum(int * init, int * end) {\n    if(init == end) return 0;\n    return *init +sum(init+1, end);\n};\n\n// multiplica os elementos do vetor\n// retorne 1, se o vetor estiver vazio\nint mult(int * init, int * end) {\n    if (init == end) return 1;\n    return *init * mult(init + 1, end);\n};\n\nstatic std::pair<int,int> __min(int* init, int* end) {\n    if (init == end) return {-1, INT_MAX};  \n    if (init + 1 == end) return {0, *init}; \n    auto rest = __min(init + 1, end); \n    if (*init <= rest.second) return {0, *init};  \n\n    return {rest.first == -1 ? -1 : rest.first + 1, rest.second};\n}\n\nint min(int * init, int * end) {\n    auto [pos, val] = __min(init,end);\n    (void)val;\n    return pos;\n}\nint main() {\n    std::vector<int> vet;\n\n    while (true) {\n        std::string line;\n        std::getline(std::cin, line);\n        std::cout << \"$\" << line << std::endl;\n        std::istringstream iss(line);\n        std::vector<std::string> args;\n        std::string arg;\n        while (iss >> arg) {\n            args.push_back(arg);\n        }\n        if (args[0] == \"end\") {\n            break;\n        } else if (args[0] == \"read\") {\n            vet.clear();\n            for (size_t i = 1; i < args.size(); i++) {\n                vet.push_back(std::stoi(args[i]));\n            }\n        } else if (args[0] == \"tostr\") {\n            auto resp = tostr(vet.data(), vet.data() + vet.size());\n            std::cout << resp << std::endl;\n        } else if (args[0] == \"torev\") {\n            auto resp = torev(vet.data(), vet.data() + vet.size());\n            std::cout << resp << std::endl;\n        } else if (args[0] == \"reverse\") {\n            reverse(vet.data(), vet.data() + vet.size());\n        } else if (args[0] == \"sum\") {\n            auto resp = sum(vet.data(), vet.data() + vet.size());\n            std::cout << resp << std::endl;\n        } else if (args[0] == \"mult\") {\n            auto resp = mult(vet.data(), vet.data() + vet.size());\n            std::cout << resp << std::endl;\n        } else if (args[0] == \"min\") {\n            auto resp = min(vet.data(), vet.data() + vet.size());\n            std::cout << resp << std::endl;\n        } else {\n            std::cout << \"Comando inv\u00e1lido\" << std::endl;\n        }\n    }\n}\n",
+            "lines": "107"
+        }
+    ]
+}
